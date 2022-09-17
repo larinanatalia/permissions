@@ -84,7 +84,11 @@ REST_FRAMEWORK = {
     'DEFAULT_THROTTLE_RATES': {
         'anon': '10/minute',
         'user': '20/minute'
-    }
+    },
+    'DEFAULT_AUTO_FIELD': [
+        'django.db.models.AutoField',
+    ],
+
 }
 
 WSGI_APPLICATION = 'api_with_restrictions.wsgi.application'
